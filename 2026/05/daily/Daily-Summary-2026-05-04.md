@@ -76,6 +76,6 @@
 
 ## Source Index
 
-- `2026-05-04_08-30_Elvis_Aditya Monday Huddle/2026-05-04_08-00-00_Elvis_Aditya Monday Huddle.txt`: One-on-one meeting transcript covering vendor knowledge transfer, AI agent design, and weekly priorities.
-- `2026-05-04_09-01_Solution Architecture Team Huddle - On Camera/2026-05-04_09-00-00_Solution Architecture Team Huddle - On Camera.txt`: Team standup transcript covering architecture reviews, project statuses, and process discussions.
-- `2026-05-04_15-31_Logical Lakehouse peer review prep/2026-05-04_15-00-00_Logical Lakehouse peer review prep.txt`: Solo work session transcript for solution design document preparation.
+- Source 1 (2026-05-04, 08:00-08:30): One-on-one meeting transcript covering vendor knowledge transfer, AI agent design, and weekly priorities.
+- Source 2 (2026-05-04, 09:00-09:25): Team standup transcript covering architecture reviews, project statuses, and process discussions.
+- Source 3 (2026-05-04, 15:00-17:00): Solo work session transcript for solution design document preparation.
