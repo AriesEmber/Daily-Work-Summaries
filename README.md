@@ -1,89 +1,98 @@
 # Daily Work Summaries
 
-A public work journal documenting the day-to-day activities, technical decisions, and lessons learned of an AI/ML Solution Architect working in clinical healthcare.
+A public work journal by **Elvis Jones**, Senior Solutions Architect for Clinical AI at an academic medical center. Doctoral candidate in big data analytics and quantum computing at Colorado Technical University.
 
-## What This Is
+This repository documents the day-to-day reality of designing, governing, and shipping AI and machine learning systems inside a regulated clinical healthcare environment. Architecture decisions, vendor evaluations, governance reviews, retrieval and LLM evaluation work, and the ambiguous middle of building production AI in a hospital setting.
 
-This repository contains automated daily summaries of my professional work. Each document captures:
+## About the Author
 
-- **Activities** — What happened that day: meetings, technical discussions, code reviews, architecture sessions
-- **Topics discussed** — Key subjects and their context
-- **Decisions and outcomes** — What was decided, who owns what
-- **Open items** — Unresolved questions and blockers
-- **Follow-ups** — Action items and research threads to pursue
-- **Lessons learned** — Patterns, insights, and observations from the work
+Elvis Jones is a Senior Solutions Architect focused on clinical AI infrastructure at an academic medical center. His work spans:
 
-## Why Public?
+- Clinical AI platform architecture on Azure
+- LLM evaluation and classification in EHR settings, including GPT-4o and Claude model families
+- AI governance, safety, and compliance in HIPAA-regulated environments
+- Retrieval architectures for clinical knowledge, including engram-inspired patterns and VaultRAG-style systems
+- Quantum computing for healthcare classification problems (dissertation work, including amplitude amplification and variational quantum classifiers)
+- Crossover background: U.S. Army EOD, government chemical munitions disposal, AI safety
 
-I work at the intersection of artificial intelligence, machine learning, and clinical healthcare systems. This is a field where:
+Other surfaces:
 
-- The problems are complex and the stakes are high
-- Best practices are still emerging
-- Few practitioners share their day-to-day reality
+- LinkedIn: https://www.linkedin.com/in/elvisjones/
+- Personal site: forthcoming
+- ORCID: forthcoming
+- arXiv author page: forthcoming
 
-This journal exists to share what it actually looks like to be an architect in this space. Not the polished conference talks or curated LinkedIn posts, but the real work: the ambiguous requirements, the vendor negotiations, the governance reviews, the debugging sessions, the architectural tradeoffs.
+## What This Repository Is
 
-## What You Will Find
+A daily journal of architecture work in clinical AI. Each entry captures a single business day and includes:
 
-- Discussions about integrating AI/ML into clinical workflows
-- Architecture decisions for healthcare data platforms
-- Navigating compliance, security, and governance in regulated environments
-- Working with clinical stakeholders who have domain expertise but limited technical background
-- Evaluating vendors and technologies for healthcare use cases
-- The unglamorous reality of enterprise architecture work
+- **Activities.** Meetings, technical discussions, code reviews, architecture sessions, vendor calls.
+- **Topics discussed.** Subjects examined that day with enough context to be readable on their own.
+- **Decisions and outcomes.** What was decided, what is owned by whom, and what the rationale was.
+- **Open items.** Unresolved questions and blockers carried forward.
+- **Follow-ups.** Action items, research threads, and references worth pursuing.
+- **Lessons learned.** Patterns, insights, and observations distilled from the day.
 
-## What You Will Not Find
+Entries publish daily on business days, with a weekly synthesis on Mondays.
 
-All content is sanitized before publication:
+## Topics Covered
 
-- No names of colleagues, managers, or stakeholders
-- No company, hospital, or health system names
-- No proprietary project names or codenames
-- No internal URLs, ticket numbers, or system identifiers
-- No PHI, PII, or anything that could identify patients
+The recurring subject matter of this journal:
 
-The goal is to share the work without compromising anyone's privacy or my employer's confidentiality.
+**Clinical AI infrastructure.** Designing AI platforms that meet the operational, security, and compliance requirements of an academic medical center. Tradeoffs between managed services, self-hosted infrastructure, and hybrid patterns. Reference architectures for Azure-based clinical AI deployments.
 
-## How It Works
+**LLM evaluation in healthcare.** Classification, summarization, and retrieval tasks against clinical text. Eval design, ground truth curation, and the practical realities of measuring model performance on protected health information. Comparative work across GPT, Claude, and open-weight model families.
 
-An automated pipeline runs daily:
+**AI governance in regulated environments.** What governance actually looks like when you have to ship. Risk frameworks, model approval workflows, audit and observability requirements, the interaction between IRB review and engineering velocity, and the gap between published responsible-AI principles and production reality.
 
-1. Collects my meeting transcripts and notes from the previous business day
-2. Processes them through Claude (Anthropic's AI) with a custom summarization prompt
-3. Applies strict sanitization rules to remove identifying information
-4. Generates a formatted Word document
-5. Commits and pushes to this repository
+**Retrieval and knowledge architectures.** Patterns for clinical knowledge retrieval, including hierarchical retrieval, hybrid search, and emerging approaches inspired by biological memory systems. Notes on engram-style retrieval, VaultRAG-style content stores, and the engineering required to make retrieval defensible in clinical contexts.
 
-The summarization prompt enforces:
+**Vendor and platform evaluation.** Notes from real vendor evaluations: Anthropic Enterprise, Microsoft Copilot variants, Databricks, AWS healthcare offerings, and the surrounding tooling ecosystem. What works, what does not, what the contracts actually say.
 
-- **Factual integrity** — Every claim must be supported by the source material
-- **Plain voice** — No marketing speak, no LinkedIn prose, no em dashes
-- **Structured output** — Consistent sections across all documents
-- **Privacy protection** — Aggressive sanitization of names and identifiers
+**Quantum computing for classification.** Dissertation-track work on amplitude amplification, variational quantum classifiers, and the question of where quantum methods earn their place in healthcare data analytics.
+
+**AI safety in high-stakes settings.** Practical safety considerations when AI systems touch clinical workflows. Crossover lessons from a prior career in explosive ordnance disposal and chemical munitions handling.
+
+## Why This Is Public
+
+Healthcare AI is a field where the problems are complex, the stakes are high, best practices are still emerging, and very few practitioners write publicly about the day-to-day reality. Most public material is either polished conference talks or curated LinkedIn posts. This journal sits in the gap. It is the unedited middle: the ambiguous requirements, the vendor negotiations, the governance reviews, the debugging sessions, the architectural tradeoffs that never appear in case studies.
+
+The intended readers are other architects, engineers, and AI practitioners working in healthcare and other regulated industries. If the problems you face are like the ones documented here, the journal is meant to be useful to you.
+
+## What This Is Not
+
+All content is sanitized before publication. The repository contains no:
+
+- Names of colleagues, managers, or stakeholders
+- Company, hospital, or health system names
+- Proprietary project names or internal codenames
+- Internal URLs, ticket numbers, or system identifiers
+- PHI, PII, or anything that could identify a patient
+
+Resemblance to specific organizations or individuals is coincidental.
 
 ## Document Format
 
-Each summary follows this structure:
+Each summary follows a consistent structure:
 
-1. **Scope** — Date range and artifact count
-2. **Activities** — Chronological list of what happened
-3. **Topics discussed** — Key subjects with context
-4. **Decisions and outcomes** — What was decided
-5. **Open items** — Unresolved questions
-6. **Possible follow-ups** — Suggested next steps
-7. **Source index** — Files that were processed
+1. **Scope.** Date range and source artifact count.
+2. **Activities.** Chronological account of what happened.
+3. **Topics discussed.** Key subjects with context.
+4. **Decisions and outcomes.** What was decided.
+5. **Open items.** Unresolved questions.
+6. **Possible follow-ups.** Suggested next steps and research threads.
+7. **Source index.** Files processed for the entry.
 
-## For Fellow Architects
+The format is stable across entries to make the archive searchable and comparable over time.
 
-If you work in healthcare IT, clinical informatics, or enterprise AI/ML, I hope this journal is useful. The problems I face are probably similar to yours. The solutions I find might save you time. The mistakes I make might save you from making the same ones.
+## Pipeline
 
-Feel free to reach out if you want to discuss anything you see here.
+The journal is generated by an automated pipeline that processes the prior business day's meeting transcripts and notes through a Claude-based summarization prompt with strict sanitization rules, formats the output as a Word document, and commits it to this repository. The summarization prompt enforces factual integrity, plain voice, structured output, and aggressive removal of identifying information. Implementation notes are kept separately from the journal content itself.
+
+## Contact
+
+If you work in clinical AI, healthcare IT, AI governance, or enterprise machine learning and want to discuss anything you see here, reach out via LinkedIn.
 
 ## Disclaimer
 
-These summaries represent my personal work journal and observations. They do not represent the views, policies, or positions of my employer. All identifying information has been removed. Any resemblance to specific organizations or individuals is coincidental and unintentional.
-
----
-*Repository initialized May 2026*
-
-<!-- Contribution diagnostic: 2026-05-05T21:00:00 -->
+These summaries are a personal work journal and reflect the author's observations only. They do not represent the views, policies, or positions of any employer. All identifying information has been removed.
